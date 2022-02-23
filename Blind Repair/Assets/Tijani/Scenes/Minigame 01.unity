@@ -428,8 +428,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _source: {fileID: 1803651512}
-  _minTime: 5
-  _maxTime: 10
+  _minTime: 0
+  _maxTime: 3
   _timeToReact: 0.5
   _event:
     m_PersistentCalls:
