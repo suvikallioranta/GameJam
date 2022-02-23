@@ -1,10 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-
     public CharacterController controller;
 
     public float speed = 12f;
@@ -25,4 +22,14 @@ public class PlayerController : MonoBehaviour
 
         controller.Move(velocity * Time.deltaTime);
     }
+
+
+    //public void OnTriggerStay(Collider other)
+    //{
+    //    //Debug.Log("enter collision");
+    //    if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.F))
+    //    {
+    //        Debug.Log("interact");
+    //    }
+    //}
 }
