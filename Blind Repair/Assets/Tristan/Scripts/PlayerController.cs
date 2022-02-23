@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public CharacterController controller;
+    public CharacterController Controller;
 
-    public float speed = 12f;
-    public float gravity = -9.81f;
+    public float Speed = 12f;
+    public float Gravity = -9.81f;
 
-    Vector3 velocity;
+    Vector3 _velocity;
 
     void Update()
     {
@@ -16,13 +16,12 @@ public class PlayerController : MonoBehaviour
 
         Vector3 move = transform.right * x + transform.forward * z;
 
-        controller.Move(move * speed * Time.deltaTime);
+        Controller.Move(move * Speed * Time.deltaTime);
 
-        velocity.y += gravity * Time.deltaTime;
+        _velocity.y += Gravity * Time.deltaTime;
 
-        controller.Move(velocity * Time.deltaTime);
+        Controller.Move(_velocity * Time.deltaTime);
     }
-
 
     //public void OnTriggerStay(Collider other)
     //{
